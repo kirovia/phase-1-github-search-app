@@ -4,8 +4,24 @@
   <meta name='viewport' content='width=device-width, initial-scale=1.0'/>
   <meta http-equiv='X-UA-Compatible' content='ie=edge'/>
   <title>Document</title>
-  <script src='js/index.js'></script>
+  <script defer src='js/index.js'></script>
   <link rel='stylesheet' href='index.css'/>
+  <style>
+    img {
+      height: 150px;
+      width: 150px;
+      margin-bottom: 16px;
+      cursor: pointer;
+    }
+    p, a {
+      font-size: 16px;
+    }
+    #user-list li {
+      display: flex;
+      flex-direction: column;
+      padding: 25px;
+    }
+  </style>
 </head>
 <body>
   <div id='main'>
@@ -14,7 +30,7 @@
 
     <form id='github-form'>
       <input id='search' type='text' name='search'>
-      <input type='submit' name='submit'/>
+      <input id='submit' type='submit' name='submit'/>
     </form>
 
     <div id='github-container'>
